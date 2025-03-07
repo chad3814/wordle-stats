@@ -1,0 +1,34 @@
+{
+  "name": "wordle-stats",
+  "version": "1.0.0",
+  "description": "Periodically poll to see if I've completed the day's Wordle",
+  "main": "index.mjs",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.4.1",
+    "@slack/bolt": "^4.2.1",
+    "dotenv": "^16.4.7",
+    "prisma": "^6.4.1"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@types/node": "^20",
+    "eslint": "^9",
+    "eslint-config-next": "15.2.1",
+    "tsx": "^4.19.3",
+    "typescript": "^5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chad3814/wordle-stats.git"
+  },
+  "author": "Chad Walker <chad@cwalker.dev>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chad3814/wordle-stats/issues"
+  },
+  "homepage": "https://github.com/chad3814/wordle-stats#readme"
+}
