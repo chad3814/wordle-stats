@@ -131,3 +131,5 @@ dist
 
 prisma/client/
 prisma/connections*
+prisma/client
+dist/

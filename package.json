@@ -1,34 +1,29 @@
 {
   "name": "wordle-stats",
-  "version": "1.0.0",
-  "description": "Periodically poll to see if I've completed the day's Wordle",
-  "main": "index.mjs",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./dist/server/slack.js",
   "scripts": {
-    "dev": "tsx watch src/index.ts",
-    "build": "tsc"
+    "dev": "tsx src/server/slack",
+    "build": "tsc --watch",
+    "lint": "eslint"
   },
   "dependencies": {
-    "@prisma/client": "^6.4.1",
+    "@prisma/client": "^6.5.0",
     "@slack/bolt": "^4.2.1",
-    "dotenv": "^16.4.7",
-    "prisma": "^6.4.1"
+    "@slack/oauth": "^3.0.2",
+    "dotenv": "^16.4.7"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@eslint/js": "^9.22.0",
     "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@tailwindcss/postcss": "^4",
+    "tailwindcss": "^4",
     "eslint": "^9",
-    "eslint-config-next": "15.2.1",
-    "tsx": "^4.19.3",
-    "typescript": "^5"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/chad3814/wordle-stats.git"
-  },
-  "author": "Chad Walker <chad@cwalker.dev>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/chad3814/wordle-stats/issues"
-  },
-  "homepage": "https://github.com/chad3814/wordle-stats#readme"
+    "eslint-config-next": "15.2.2",
+    "@eslint/eslintrc": "^3"
+  }
 }
